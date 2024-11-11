@@ -137,8 +137,8 @@
 
         .hero__image {
             margin: 1rem 0 0 0rem;
-            display: flex; // Agregamos flexbox
-            align-items: flex-end; // Alineamos al final
+            display: flex;
+            align-items: flex-end;
 
             img {
                 height: 85%;
@@ -220,7 +220,7 @@
     .solution__container {
         display: grid;
         grid-template-rows: auto 1fr;
-        padding: 8% 0 0 10%;
+        padding: 8% 5% 0 10%;
 
         @media (max-width: 768px) {
             padding: 5%;
@@ -241,7 +241,6 @@
                 @include mixins.smallText($white);
             }
 
-            margin-bottom: 1rem;
         }
 
         .solution__images {
@@ -340,7 +339,7 @@
         max-width: 1200px;
         margin: 0 auto;
 
-        .store__container {
+        .store__image-container {
             background-color: $background-light;
             overflow: hidden;
             transition: transform 0.3s ease;
@@ -620,11 +619,12 @@
             align-items: end;
 
             margin-top: -1.5rem;
+
             @media (max-width: 1024px) {
-                    grid-template-columns: auto;
-                    grid-template-rows: 1fr 1fr;
-                    display: none;
-                }
+                grid-template-columns: auto;
+                grid-template-rows: 1fr 1fr;
+                display: none;
+            }
 
             img {
                 align-items: end;
@@ -699,16 +699,24 @@
         .services__text {
             color: $white;
 
+
             h3 {
                 font-size: 1.5rem;
                 font-weight: bold;
                 margin-bottom: 1rem;
             }
 
-            p {
-                font-size: 0.9rem;
-                margin-bottom: 0.6rem;
-                font-weight: 300;
+            ul {
+                list-style-type: none;
+                padding-left: 0;
+
+                li {
+
+                    text-decoration: none;
+                    font-size: 0.9rem;
+                    margin-bottom: 0.6rem;
+                    font-weight: 300;
+                }
             }
         }
     }
@@ -766,7 +774,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                margin: 1rem 10% 0rem 15%;
+                margin: 1rem 10% 0rem 10%;
 
                 a {
                     text-decoration: none;
