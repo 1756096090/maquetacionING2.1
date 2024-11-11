@@ -1,0 +1,33 @@
+@mixin smallestText($color: rgb(95, 59, 142)) {
+    font-size: 15px;
+    color: $color;
+}
+
+@mixin smallText($color: rgb(95, 59, 142)) {
+    font-size: 22px;
+    color: $color;
+}
+@mixin smallText2($color: rgb(95, 59, 142)) {
+    font-size: 15px;
+    color: $color;
+}
+
+@mixin mediumText($color: rgb(95, 59, 142)) {
+    font-size: 26px;
+    color: $color;
+}
+
+@mixin titleText($color: rgb(95, 59, 142)) {
+    font-size: 50px;
+    color: $color;
+}
+@mixin titleText2($color: rgb(95, 59, 142)) {
+    font-size: 40px;
+    color: $color;
+}
+@mixin normalText($color: rgb(95, 59, 142)) {
+    font-size: 19px;
+    margin-bottom: 1rem;
+    color: $color;
+}
+
