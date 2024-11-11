@@ -1,5 +1,6 @@
 @use "reset";
 @use "mixins";
+@use "variables" as *;
 
 .container {
     @include reset.reset;
@@ -9,7 +10,7 @@
 }
 
 .hero {
-    background-image: url(../images/hero/backgroundHero.png);
+    background-image: $hero-background;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0rem 0 0 7.5rem;
@@ -31,13 +32,13 @@
 
         h1 {
             font-size: 5rem;
-            color: white;
+            color: var($white);
             margin-bottom: 2rem;
         }
 
         p {
             font-size: 2rem;
-            color: rgb(102, 17, 17);
+            color: $text-color;
             margin-bottom: 2rem;
         }
 
@@ -56,7 +57,7 @@
 
                     a {
                         text-decoration: none;
-                        @include mixins.smallText2(white);
+                        @include mixins.smallText2($white);
 
                     }
                 }
@@ -69,7 +70,7 @@
             .header__hamburger-menu {
                 width: 50px;
                 height: 50px;
-                background-color: #46157a;
+                background-color: $primary-color;
                 border: none;
                 cursor: pointer;
                 display: flex;
@@ -83,7 +84,7 @@
                 .hamburger-menu__line {
                     width: 100%;
                     height: 4px;
-                    background-color: white;
+                    background-color: $white;
                     display: block;
                     transition: transform 0.3s ease;
                 }
@@ -111,26 +112,26 @@
             }
 
             .hero__pretitle {
-                @include mixins.smallText(white);
+                @include mixins.smallText($white);
             }
 
             .hero__title {
-                @include mixins.titleText(white);
+                @include mixins.titleText($white);
                 @include reset.reset;
             }
 
             .hero__subtitle {
-                @include mixins.smallText(white);
+                @include mixins.smallText($white);
             }
 
             .hero__button {
                 margin-top: 1.5rem;
-                background-color: #FEA30C;
-                color: white;
+                background-color: $secondary-color;
+                color: $white;
                 padding: 1rem 2rem 1rem 2rem;
                 font-weight: bold;
                 border-radius: 10px;
-                @include mixins.smallestText(white);
+                @include mixins.smallestText($white);
             }
         }
 
@@ -196,15 +197,15 @@
 
         .about__description {
             .about__text {
-                @include mixins.normalText(black);
+                @include mixins.normalText($black);
             }
 
             .about__brand {
-                @include mixins.normalText(black);
+                @include mixins.normalText($black);
 
                 .about__brand-service {
                     font-weight: bold;
-                    color: #46157a;
+                    color: $primary-color;
                 }
             }
         }
@@ -213,7 +214,7 @@
 }
 
 .solution {
-    background-image: url(../images/solution/background.png);
+    background-image: $solution-background;
     background-size: cover;
 
     .solution__container {
@@ -229,15 +230,15 @@
             margin-bottom: 2rem;
 
             .solution__pretitle {
-                @include mixins.smallText(white);
+                @include mixins.smallText($white);
             }
 
             .solution__highlight {
-                @include mixins.titleText(white);
+                @include mixins.titleText($white);
             }
 
             .solution__subtitle {
-                @include mixins.smallText(white);
+                @include mixins.smallText($white);
             }
 
             margin-bottom: 1rem;
@@ -289,7 +290,7 @@
 
                     p {
                         text-align: center;
-                        @include mixins.smallText2(white);
+                        @include mixins.smallText2($white);
                         margin-top: 0.5rem;
                         max-width: 100%;
                         word-wrap: break-word;
@@ -340,7 +341,7 @@
         margin: 0 auto;
 
         .store__container {
-            background-color: #f8f8f8;
+            background-color: $background-light;
             overflow: hidden;
             transition: transform 0.3s ease;
 
@@ -434,7 +435,7 @@
 }
 
 .experience {
-    background-image: url(../images/experience/background.png);
+    background-image: $experience-background;
     padding: 8% 0 0 10%;
 
     .experience__container {
@@ -450,15 +451,15 @@
 
             .experience__pretitle {
                 @include reset.reset;
-                @include mixins.smallText(#F3F1D1);
+                @include mixins.smallText($title-color);
             }
 
             .experience__highlight {
-                @include mixins.titleText(#F3F1D1);
+                @include mixins.titleText($title-color);
             }
 
             .experience__subtitle {
-                @include mixins.smallText(#F3F1D1);
+                @include mixins.smallText($title-color);
             }
         }
     }
@@ -485,13 +486,13 @@
             .experience__number {
                 font-size: 3rem;
                 font-weight: bold;
-                color: #F3F1D1;
+                color: $title-color;
                 margin-bottom: 2rem;
             }
 
             .experience__description {
                 text-align: center;
-                @include mixins.smallText(#F3F1D1);
+                @include mixins.smallText($title-color);
                 margin-bottom: 1rem;
             }
         }
@@ -552,7 +553,7 @@
 }
 
 .contact {
-    background-image: url(../images/contact/background.png);
+    background-image: $contact-background;
     background-size: cover;
     padding: 0 5% 0 20%;
 
@@ -579,15 +580,15 @@
 
             .contact__pretitle {
                 @include reset.reset;
-                @include mixins.smallText(#F3F1D1);
+                @include mixins.smallText($title-color);
             }
 
             .contact__highlight {
-                @include mixins.titleText(#F3F1D1);
+                @include mixins.titleText($title-color);
             }
 
             .contact__subtitle {
-                @include mixins.smallText(#F3F1D1);
+                @include mixins.smallText($title-color);
             }
 
             .contact__buttons {
@@ -598,18 +599,18 @@
 
                 .contact__button {
                     border-radius: 10px;
-                    background-color: #f5a623;
+                    background-color: $accent-color;
                     text-decoration: none;
-                    color: white;
+                    color: $white;
                     padding: 1rem 1rem 1rem 1rem;
                 }
             }
 
             .conact_button-big {
                 border-radius: 10px;
-                background-color: #f5a623;
+                background-color: $accent-color;
                 text-decoration: none;
-                color: white;
+                color: $white;
                 padding: 1rem 1rem 1rem 1rem;
             }
         }
@@ -696,7 +697,7 @@
         }
 
         .services__text {
-            color: white;
+            color: $white;
 
             h3 {
                 font-size: 1.5rem;
@@ -739,7 +740,7 @@
 .footer {
     background-color: #22036F;
     padding: 2rem 0 0 10;
-    color: white;
+    color: $white;
 
     .footer__container {
         padding: 1rem 0 0 0;
@@ -769,7 +770,7 @@
 
                 a {
                     text-decoration: none;
-                    @include mixins.normalText(white);
+                    @include mixins.normalText($white);
                 }
             }
 

@@ -29,7 +29,7 @@
 }
 .hero .hero__header h1 {
   font-size: 5rem;
-  color: white;
+  color: var(#ffffff);
   margin-bottom: 2rem;
 }
 .hero .hero__header p {
@@ -53,7 +53,7 @@
 .hero .hero__header .header__nav ul li a {
   text-decoration: none;
   font-size: 15px;
-  color: white;
+  color: #ffffff;
 }
 @media (max-width: 1052px) {
   .hero .hero__header .header__nav ul {
@@ -77,7 +77,7 @@
 .hero .hero__header .header__nav .header__hamburger-menu .hamburger-menu__line {
   width: 100%;
   height: 4px;
-  background-color: white;
+  background-color: #ffffff;
   display: block;
   transition: transform 0.3s ease;
 }
@@ -100,11 +100,11 @@
 }
 .hero .hero__container .hero__content .hero__pretitle {
   font-size: 22px;
-  color: white;
+  color: #ffffff;
 }
 .hero .hero__container .hero__content .hero__title {
   font-size: 50px;
-  color: white;
+  color: #ffffff;
 }
 .hero .hero__container .hero__content .hero__title * {
   margin: 0;
@@ -113,17 +113,17 @@
 }
 .hero .hero__container .hero__content .hero__subtitle {
   font-size: 22px;
-  color: white;
+  color: #ffffff;
 }
 .hero .hero__container .hero__content .hero__button {
   margin-top: 1.5rem;
   background-color: #FEA30C;
-  color: white;
+  color: #ffffff;
   padding: 1rem 2rem 1rem 2rem;
   font-weight: bold;
   border-radius: 10px;
   font-size: 15px;
-  color: white;
+  color: #ffffff;
 }
 .hero .hero__container .hero__image {
   margin: 1rem 0 0 0rem;
@@ -180,12 +180,12 @@
 .about .about__container .about__description .about__text {
   font-size: 19px;
   margin-bottom: 1rem;
-  color: black;
+  color: #000000;
 }
 .about .about__container .about__description .about__brand {
   font-size: 19px;
   margin-bottom: 1rem;
-  color: black;
+  color: #000000;
 }
 .about .about__container .about__description .about__brand .about__brand-service {
   font-weight: bold;
@@ -212,15 +212,15 @@
 }
 .solution .solution__container .solution__content .solution__pretitle {
   font-size: 22px;
-  color: white;
+  color: #ffffff;
 }
 .solution .solution__container .solution__content .solution__highlight {
   font-size: 50px;
-  color: white;
+  color: #ffffff;
 }
 .solution .solution__container .solution__content .solution__subtitle {
   font-size: 22px;
-  color: white;
+  color: #ffffff;
 }
 .solution .solution__container .solution__images {
   display: grid;
@@ -268,7 +268,7 @@
 .solution .solution__container .solution__images .solution__catalog .solution__container-images p {
   text-align: center;
   font-size: 15px;
-  color: white;
+  color: #ffffff;
   margin-top: 0.5rem;
   max-width: 100%;
   word-wrap: break-word;
@@ -584,14 +584,14 @@
   border-radius: 10px;
   background-color: #f5a623;
   text-decoration: none;
-  color: white;
+  color: #ffffff;
   padding: 1rem 1rem 1rem 1rem;
 }
 .contact .contact__container .contact__content .conact_button-big {
   border-radius: 10px;
   background-color: #f5a623;
   text-decoration: none;
-  color: white;
+  color: #ffffff;
   padding: 1rem 1rem 1rem 1rem;
 }
 .contact .contact__container .contact__images {
@@ -669,7 +669,7 @@
   }
 }
 .services .services__container .services__text {
-  color: white;
+  color: #ffffff;
 }
 .services .services__container .services__text h3 {
   font-size: 1.5rem;
@@ -706,7 +706,7 @@
 .footer {
   background-color: #22036F;
   padding: 2rem 0 0 10;
-  color: white;
+  color: #ffffff;
 }
 .footer .footer__container {
   padding: 1rem 0 0 0;
@@ -733,5 +733,5 @@
   text-decoration: none;
   font-size: 19px;
   margin-bottom: 1rem;
-  color: white;
+  color: #ffffff;
 }/*# sourceMappingURL=main.css.map */
